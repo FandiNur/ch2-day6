@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="/assets/css/blog-detail.css">
+      <script
+      src="https://kit.fontawesome.com/9abab0ea8b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light position-absolute top-0 bg-warning"
+      style="height: 60px; width: 100%"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="../assets/images/logo.png"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/project">ADD PROJECT</a>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="/contact" role="button"
+            >contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <div style="padding-top:40px;">
+    <div class="blog-detail">
+      <div class="blog-detail-container">
+        <h1>{{this.title}}</h1>
+        <div class="author">{{this.start_date}} | {{this.end_date}}</div>
+        <div class="author">{{this.durationUpdate}} | {{this.author}}</div>
+           <div class="d-flex justify-content-center align-items-center"style="font-size: 30px; gap: 20px ;">
+            <i class='{{this.technologies.[0]}}'></i>
+            <i class='{{this.technologies.[1]}}'></i>
+            <i class='{{this.technologies.[2]}}'></i>
+            <i class='{{this.technologies.[3]}}'></i>
+        </div>
+        <img src="/uploads/{{this.image}}">
+        <p> {{this.description}}
+          {{!-- REPUBLIKA.CO.ID, JAKARTA -- Ketimpangan sumber daya manusia (SDM) di
+          sektor digital masih menjadi isu yang belum terpecahkan. seorang pakar
+          bernama yusuf hamin 3 mengatakan Berdasarkan penelitian ManpowerGroup, 
+          ketimpangan SDM global, termasuk Indonesia,
+          meningkat dua kali lipat dalam satu dekade terakhir. Khusus di sektor
+          teknologi yang berkembang pesat, menurut Kemendikbudristek, Indonesia
+          kekurangan sembilan juta pekerja teknologi hingga tahun 2030. Hal itu
+          berarti Indonesia memerlukan sekitar 600 ribu SDM digital yang
+          memasuki pasar setiap tahunnya. --}}
+        </p>
+      </div>
+    </div>
+  </div>
+<!-- boosttrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html> 
